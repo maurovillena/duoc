@@ -1,5 +1,12 @@
 /*  Hoja de estilos para manual Duoc UC */
 
+/* TIPOGRAFÍAS*/
+
+@font-face{ 
+	font-family: 'Merriweather';
+	src: url('webfontkit-20180511-152657/merriweather-regular-webfont.woff') format('woff'),
+	     
+}
 
 /* DIRECTRICES GENERALES */
 
