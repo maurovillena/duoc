@@ -3,7 +3,7 @@
 /* TIPOGRAFÍAS*/
 
 @font-face{ 
-	font-family: 'Merriweather';
+	font-family: 'Merriweather', serif;
 	src: url('webfontkit-20180511-152657/merriweather-regular-webfont.woff') format('woff'),
 	     
 }
@@ -12,7 +12,7 @@
 
 body{
 	margin: 0;
-	font-family: 'Myriad Pro';
+	font-family: 'Myriad Pro', sans-serif;
 	/*background:#C7CBCA;*/
 	background: #fff;
 }
@@ -451,12 +451,12 @@ a:hover{
 
 
 #noticias p{
-	font-family: 'Merriweather Light';
+	font-family: 'Merriweather Light', serif;
 	font-size: 17px;
 }
 
 #noticias h1, #noticias h2,#noticias h3,#noticias h4,#noticias h5,#noticias h6{
-	font-family: 'Merriweather';
+	font-family: 'Merriweather' serif;
 }
 
 .noticia{
@@ -547,7 +547,7 @@ a:hover{
 }
 
 .noticia-info p{
-	font-family: 'Myriad Pro'!important;
+	font-family: 'Myriad Pro', sans-serif !important;
 }
 
 .noticia-rel p{
@@ -568,7 +568,7 @@ label{
 }
 
 input, textarea, select{
-	font-family: 'Myriad Pro';
+	font-family: 'Myriad Pro', sans-serif;
 	display: block;
 	border-radius: 8px;
 	font-size: 19px;
@@ -637,7 +637,7 @@ input:focus, textarea:focus, select:focus{
 /*EVENTOS*/
 
 .event{
-	font-family: 'Myriad Pro' !important;
+	font-family: 'Myriad Pro', sans-serif !important;
 	display: block;
 	color: #000;
 	text-decoration: none;
@@ -653,13 +653,13 @@ input:focus, textarea:focus, select:focus{
 	font-size: 25px;
 	font-weight: 600;
 	margin: 5px 0;
-	font-family: 'Myriad Pro'!important;
+	font-family: 'Myriad Pro', sans-serif!important;
 }
 .event .fecha{
 	line-height: 1;
 	font-weight: 900;
 	margin: 5px 0;
-	font-family: 'Myriad Pro'!important;
+	font-family: 'Myriad Pro', sans-serif!important;
 }
 
 .event .ubicacion{
