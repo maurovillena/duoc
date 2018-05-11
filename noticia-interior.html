@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html id="noticias">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+	<header class="header">
+		<a class="nav-logo" href="index.html"><span style="color:#EEB829;">Duoc</span> <span style="color:#fff;">UC</span></a>
+		
+		<ul class="nav">
+			<li><a href="escuelas.html">Carreras y Escuelas</a></li>
+			<li class="header-activo"><a href="noticias.html">Noticias</a></li>
+			<li><a href="#">Admisión</a></li>
+			<li><a href="#" onclick="showdrop();">Sitios <i class="fas fa-caret-down"></i></a>
+				<ul class="dropdown" style="display:none;" id="nav-dropdown">
+					<li><a href="#">Nosotros</a></li>
+					<li class="separador-bottom"><a href="#">Misión</a></li>
+					<li><a href="login.html">Portal Alumnos</a></li>
+				</ul>
+			</li>
+
+			<li><input class="buscador" type="text" name="search" placeholder="Buscar"><button class="boton-buscador"><i class="fas fa-search"></i></button></li>
+
+			<script type="text/javascript">
+				function showdrop(){
+
+					var x = document.getElementById('nav-dropdown');
+
+					if (x.style.display==='none') {
+						x.style.display='block';
+					} else {
+						x.style.display='none';
+					}
+
+				}
+			</script>
+			
+		</ul>
+		
+
+	</header>
+	<header class="sub-header">
+		<a class="nav-logo" href="noticias.html"><span style="color:#fff;">Portal Noticias</span></a>
+	</header>
+
+	<header class="sub-header-responsive">
+		<a class="nav-logo" href="noticias.html"><span style="color:#fff;">Portal Noticias</span></a>
+		<button onclick="collapse()" id="nav-collapse"><i class="fas fa-bars"></i></button>
+
+		<div id="collapse-content">
+			<ul class="transversal">
+				<a href="escuelas.html"> <li>Carreras y Escuelas</li> </a>
+				<a href="noticias.html"><li class="header-activo">Noticias</li></a>
+				<a href="#"><li>Admisión</li></a>
+			</ul>
+			<ul>
+				<a href="#"><li>asd</li></a>
+				<a href="#"><li>asd</li></a>
+				<a href="#"><li>asd</li></a>
+
+			</ul>
+		</div>
+
+		
+	</header>
+
+	<script type="text/javascript">
+		function collapse(){
+
+					var x = document.getElementById('collapse-content');
+
+					if (x.style.display==='none') {
+						x.style.display='block';
+
+					} else {
+						x.style.display='none';
+					}
+
+				}
+	</script>
+
+	<div class="seccion suple">
+		<div class="col-3 noticia-info col-sm-12">
+			
+			<p><i class="fas fa-calendar-alt"></i> 1 de Enero 2018</p>
+			<p>Autor: Juan Perez P.</p>
+			<p>Compartir: &nbsp 
+				<a href="#"><i class="fab fa-facebook-square"></i></a> |
+				<a href="#"><i class="fab fa-twitter-square"></i></a> |
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+				</p>
+
+
+			<p class="sm-hide"><i class="fas fa-quote-left"></i> <i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </i><i class="fas fa-quote-right"></i></p>
+
+		</div>
+
+		<div class="col-8 left-col-1 col-sm-12">
+			
+			<p><i>Categoría</i></p>
+			<h1>Título de la noticia</h1>
+			<div class="foto-noticia noticia-interior">
+				<img src="color-placeholder.jpg">
+			</div>
+
+			<p class="lg-hide"><i class="fas fa-quote-left"></i> <i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </i><i class="fas fa-quote-right"></i></p>
+
+			<p class="bajada">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+			<p>
+				Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.<br><br>
+				Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt.<br><br>
+				Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
+			</p>
+			
+		</div>
+	</div>
+
+
+	<div class="seccion noticias suple">
+
+		<div class="noticia noticia-rel">
+			<p><i class="fas fa-arrow-left"></i> Anterior</p>
+			<div class="foto-noticia">
+				<img src="color-placeholder.jpg">
+			</div>
+			<div class="texto-noticia">
+				<h2>Título Noticia 1</h2>
+			</div>
+		</div>
+
+		<div class="noticia sm-hide">
+			
+		</div>
+
+		<div class="noticia noticia-rel">
+			<p style="text-align: right;">Siguiente <i class="fas fa-arrow-right"></i></p>
+			<div class="foto-noticia">
+				<img src="color-placeholder.jpg">
+			</div>
+			<div class="texto-noticia">
+				<h2 style="text-align: right;">Título Noticia 3</h2>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="footer">
+
+		<div class="col-4 col-sm-12 separador-right">
+			<ul>
+				<li class="title">DUOC UC</li>
+				<li><a href="#">Reglamento académico</a></li>
+				<li><a href="#">Políticas de privacidad</a></li>
+				<li><a href="#">Autoridades</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+		
+		<div class="col-4 col-sm-12 separador-right">
+			<ul>
+				<li class="title">ADMISIÓN 2018</li>
+				<li><a href="#">Carreras</a></li>
+				<li><a href="#">Sedes</a></li>
+				<li><a href="#">Proceso de admisión</a></li>
+				<li><a href="#">Financiamiento</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+		</div>
+
+		<div class="col-4 col-sm-12">
+			<img class="acreditacion" src="acreditado7-2017.png">
+		</div>
+	</footer>
+	<footer class="footer sub-footer">
+		<div style="text-align: center;">
+			<a href="login.html">Portal Colaboradores</a> | 
+			<a href="#">Portal Proveedores</a>
+		</div>
+	</footer>
+</body>
+
+
+
+</html>

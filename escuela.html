@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+	<header class="header">
+		<a class="nav-logo" href="index.html"><span style="color:#EEB829;">Duoc</span> <span style="color:#fff;">UC</span></a>
+		
+		<ul class="nav">
+			<li class="header-activo"><a href="escuelas.html">Carreras y Escuelas</a></li>
+			<li><a href="noticias.html">Noticias</a></li>
+			<li><a href="#">Admisión</a></li>
+			<li><a href="#" onclick="showdrop();">Sitios <i class="fas fa-caret-down"></i></a>
+				<ul class="dropdown" style="display:none;" id="nav-dropdown">
+					<li><a href="#">Nosotros</a></li>
+					<li class="separador-bottom"><a href="#">Misión</a></li>
+					<li><a href="login.html">Portal Alumnos</a></li>
+				</ul>
+			</li>
+
+			<li><input class="buscador" type="text" name="search" placeholder="Buscar"><button class="boton-buscador"><i class="fas fa-search"></i></button></li>
+
+			<script type="text/javascript">
+				function showdrop(){
+
+					var x = document.getElementById('nav-dropdown');
+
+					if (x.style.display==='none') {
+						x.style.display='block';
+					} else {
+						x.style.display='none';
+					}
+
+				}
+			</script>
+			
+		</ul>
+		
+
+	</header>
+	<header class="sub-header comunicaciones">
+		<a class="nav-logo" href="#"><span style="color:#fff;">Escuela de Comunicación</span></a>
+
+		<ul class="nav">
+			<a href="#carreras"><li>Carreras</li></a>
+			<a href="#directivos"><li>Directivos</li></a>
+			<a href="#contacto"><li>Contacto</li></a>
+		</ul>
+
+	</header>
+	<header class="sub-header-responsive comunicaciones">
+		<a class="nav-logo" href="#"><span style="color:#fff;">Escuela de Comunicación</span></a>
+		<button onclick="collapse()" id="nav-collapse"><i class="fas fa-bars"></i></button>
+
+		<div id="collapse-content">
+			<ul class="transversal">
+				<a href="escuelas.html"> <li class="header-activo">Carreras y Escuelas</li> </a>
+				<a href="noticias.html"><li>Noticias</li></a>
+				<a href="#"><li>Admisión</li></a>
+			</ul>
+			<ul>
+				<a href="teatro.html"><li>Actuación</li></a>
+				<a href="teatrotab.html"><li>Actuación (pestañas)</li></a>
+				<a href="#"><li>Ítem 3</li></a>
+				<a href="#"><li>Ítem 4</li></a>
+
+			</ul>
+		</div>
+		
+	</header>
+
+	<script type="text/javascript">
+		function collapse(){
+
+					var x = document.getElementById('collapse-content');
+
+					if (x.style.display==='none') {
+						x.style.display='block';
+
+					} else {
+						x.style.display='none';
+					}
+
+				}
+	</script>
+
+	<div class="destacado full-width">
+		<img src="com.jpg">
+	</div>
+
+	<div class="seccion" id="carreras">
+		<h1>Carreras</h1>
+
+		<div class="col-6 col-sm-12">
+			<h2>Carreras Profesionales</h2>
+
+			<ul>
+				<a href="teatro.html"><li>Actuación</li></a>
+				<a href="#"><li>Animación Digital</li></a>
+				<a href="#"><li>Comunicación Audiovisual</li></a>
+				<a href="#"><li>Ingeniería en Sonido</li></a>
+				<a href="#"><li>Publicidad</li></a>
+				<a href="#"><li>Relaciones Públicas Mención Marketing</li></a>
+			</ul>
+		</div>
+
+		<div class="col-6 col-sm-12">
+			<h2>Carreras técnicas</h2>
+
+			<ul>
+				<a href="#"><li>Publicidad Técnica mención Producción Publicitaria</li></a>
+				<a href="#"><li>Técnico Audiovisual</li></a>
+				<a href="#"><li>Tecnología en Sonido</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="seccion cta comunicaciones" style="background-image: url('movie-theater.jpg');background-position: center;">
+		<p>Proceso de matrículas abierto <a href="#">¡Postula aquí!</a></p>
+	</div>
+
+	<div class="seccion" id="directivos">
+		<h1>Directivos</h1>
+
+		<div class="directivo">
+			<img src="person-placeholder.jpg">
+			<h3>Juan Perez - Decano</h3>
+			<p>Estudios, títulos, información importante <br><i>mail@duoc.cl</i></p>
+		</div>
+
+		<div class="directivo">
+			<img src="person-placeholder.jpg">
+			<h3>Pedro Mendez - Secretario Académico</h3>
+			<p>Estudios, títulos, información importante <br><i>mail@duoc.cl</i></p>
+		</div>
+
+		<div class="directivo">
+			<img src="person-placeholder.jpg">
+			<h3>Juan Perez - Jefe de extensión</h3>
+			<p>Estudios, títulos, información importante <br><i>mail@duoc.cl</i></p>
+		</div>
+
+		<div class="directivo">
+			<img src="person-placeholder.jpg">
+			<h3>Juan Perez - Jefe de Docencia</h3>
+			<p>Estudios, títulos, información importante <br><i>mail@duoc.cl</i></p>
+		</div>
+
+		<div class="directivo">
+			<img src="person-placeholder.jpg">
+			<h3>Juan Perez - Decano</h3>
+			<p>Estudios, títulos, información importante <br><i>mail@duoc.cl</i></p>
+		</div>
+
+		<div class="directivo">
+			<img src="person-placeholder.jpg">
+			<h3>Pedro Mendez - Secretario Académico</h3>
+			<p>Estudios, títulos, información importante <br><i>mail@duoc.cl</i></p>
+		</div>
+
+		<div class="directivo">
+			<img src="person-placeholder.jpg">
+			<h3>Juan Perez - Jefe de extensión</h3>
+			<p>Estudios, títulos, información importante <br><i>mail@duoc.cl</i></p>
+		</div>
+
+		<div class="directivo">
+			<img src="person-placeholder.jpg">
+			<h3>Juan Perez - Jefe de Docencia</h3>
+			<p>Estudios, títulos, información importante <br><i>mail@duoc.cl</i></p>
+		</div>
+
+
+	</div>
+
+	<div class="seccion" id="contacto">
+		<h1>Contacto</h1>
+
+		<div class="col-6 left-col-3 col-sm-12">
+			<form>
+				<label>Nombre</label>
+				<input type="text" name="nombre">
+				<label>Mail</label>
+				<input type="text" name="nombre">
+				<label>Teléfono</label>
+				<input type="text" name="nombre">
+				<label>Mensaje</label>
+				<textarea></textarea>
+				<a href="#" class="button btn-primary"> Enviar</a>
+			</form>
+		</div>
+	</div>
+
+
+	<footer class="footer">
+
+		<div class="col-4 col-sm-12 separador-right">
+			<ul>
+				<li class="title">DUOC UC</li>
+				<li><a href="#">Reglamento académico</a></li>
+				<li><a href="#">Políticas de privacidad</a></li>
+				<li><a href="#">Autoridades</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+		
+		<div class="col-4 col-sm-12 separador-right">
+			<ul>
+				<li class="title">ADMISIÓN 2018</li>
+				<li><a href="#">Carreras</a></li>
+				<li><a href="#">Sedes</a></li>
+				<li><a href="#">Proceso de admisión</a></li>
+				<li><a href="#">Financiamiento</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+		</div>
+
+		<div class="col-4 col-sm-12">
+			<img class="acreditacion" src="acreditado7-2017.png">
+		</div>
+	</footer>
+	<footer class="footer sub-footer">
+		<div style="text-align: center;">
+			<a href="login.html">Portal Colaboradores</a> | 
+			<a href="#">Portal Proveedores</a>
+		</div>
+	</footer>
+</body>
+
+
+
+<script src="jquery.js"></script>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+</html>

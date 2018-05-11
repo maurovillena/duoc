@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+	<header class="header sm-hide">
+		<a class="nav-logo" href="index.html"><span style="color:#EEB829;">Duoc</span> <span style="color:#fff;">UC</span></a>
+		
+		<ul class="nav">
+			<li class="header-activo"><a href="escuelas.html">Carreras y Escuelas</a></li>
+			<li><a href="noticias.html">Noticias</a></li>
+			<li><a href="#">Admisión</a></li>
+			<li><a href="#" onclick="showdrop();">Sitios <i class="fas fa-caret-down"></i></a>
+				<ul class="dropdown" style="display:none;" id="nav-dropdown">
+					<li><a href="#">Nosotros</a></li>
+					<li class="separador-bottom"><a href="#">Misión</a></li>
+					<li><a href="login.html">Portal Alumnos</a></li>
+				</ul>
+			</li>
+
+			<li><input class="buscador" type="text" name="search" placeholder="Buscar"><button class="boton-buscador"><i class="fas fa-search"></i></button></li>
+
+			<script type="text/javascript">
+				function showdrop(){
+
+					var x = document.getElementById('nav-dropdown');
+
+					if (x.style.display==='none') {
+						x.style.display='block';
+					} else {
+						x.style.display='none';
+					}
+
+				}
+			</script>
+			
+		</ul>
+		
+
+	</header>
+
+	<header class="header-responsive" style="background-color: #002d56;">
+		<a class="nav-logo" href="index.html"><span style="color:#EEB829;">Duoc</span> <span style="color:#fff;">UC</span></a>
+		<button onclick="collapse()" id="nav-collapse"><i class="fas fa-bars"></i></button>
+
+		<div id="collapse-content">
+			<ul class="transversal">
+				<a href="escuelas.html"> <li>Carreras y Escuelas</li> </a>
+				<a href="noticias.html"><li>Noticias</li></a>
+				<a href="#"><li>Admisión</li></a>
+			</ul>
+			<ul>
+				<a href="#"><li>Nosotros</li></a>
+				<a href="#"><li>Misión</li></a>
+				<a href="login.html"><li>Portal Alumnos</li></a>
+
+			</ul>
+		</div>
+
+		
+	</header>
+
+	<script type="text/javascript">
+		function collapse(){
+
+					var x = document.getElementById('collapse-content');
+
+					if (x.style.display==='none') {
+						x.style.display='block';
+
+					} else {
+						x.style.display='none';
+					}
+
+				}
+	</script>
+
+	<div class="seccion">
+		
+		<div class="col-10 col-sm-12 left-col-1 medio-suple">
+			<h1>Escuelas</h1>
+
+			<p>Duoc UC tiene nueve escuelas, lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+
+			<div class="escuelas-lista">
+				<div class="escuelas-min" style="border-color:#712F92;">
+					<p>Escuela de Administración y Negocios</p>
+
+					<form>
+						<select>
+							<option value="1">Carreras</option>
+							<option disabled value="2">Carreras Profesionales</option>
+							<option value="3">&nbsp Auditoría</option>
+							<option value="4">&nbsp Ingeniería en Administración</option>
+							<option value="5">&nbsp Ingeniería en Administración de Recursos Humanos</option>
+							<option value="6">&nbsp Ingeniería en Comercio Exterior</option>
+							<option value="7">&nbsp Ingeniería en Gestión Logística</option>
+							<option value="8">&nbsp Ingeniería en Marketing</option>
+							<option disabled value="9">Carreras Técnicas</option>
+							<option value="10">&nbsp Administración de Empresas Mención Marketing</option>
+							<option value="11">&nbsp Administración de Recursos Humanos</option>
+							<option value="12">&nbsp Administración Financiera</option>
+							<option value="13">&nbsp Comercio Exterior</option>
+							<option value="14">&nbsp Contabilidad General Mención Legislación Tributaria</option>
+							<option value="15">&nbsp Gestión Comercial</option>
+							<option value="16">&nbsp Técnico en Gestión Logística</option>
+						</select>
+					</form>
+				</div>
+
+				<div class="escuelas-min" style="border-color:#B00636;">
+					<a href="escuela.html"><p>Escuela de Comunicación</p></a>
+					<form>
+						<select onchange="window.location=this.options[this.selectedIndex].value">
+							<option value="#">Carreras</option>
+							<option disabled value="#">Carreras Profesionales</option>
+							<option value="teatro.html">&nbsp Actuación (con acordeón)</option>
+							<option value="teatrotab.html">&nbsp Actuación (con pestañas)</option>
+							<option value="#">&nbsp Animación Digital</option>
+							<option value="#">&nbsp Comunicación Audiovisual</option>
+							<option value="#">&nbsp Ingeniería en Sonido</option>
+							<option value="#">&nbsp Publicidad</option>
+							<option value="#">&nbsp Relaciones Públicas Mención Marketing</option>
+							<option disabled value="9">Carreras Técnicas</option>
+							<option value="#">&nbsp Publicidad Técnica Mención Producción Publicitaria</option>
+							<option value="#">&nbsp Técnico Audiovisual</option>
+							<option value="#">&nbsp Técnico en Sonido</option>
+							
+						</select>
+					</form>
+				</div>
+
+				<div class="escuelas-min" style="border-color:#F17731;">
+					<p>Escuela de Construcción</p>
+
+					<form>
+						<select>
+							<option value="1">Carreras</option>
+							<option disabled value="2">Carreras Profesionales</option>
+							<option value="3">&nbsp Ingeniería en Construcción</option>
+							<option value="4">&nbsp Ingeniería en Prevención de Riesgos</option>
+							<option disabled value="5">Carreras Técnicas</option>
+							<option value="6">&nbsp Dibujo y Modelamiento Arquitectónico y Estructural</option>
+							<option value="7">&nbsp Restauración Patrimonial</option>
+							<option value="8">&nbsp Técnico en Construcción</option>
+							<option value="9">&nbsp Técnico en Instalaciones y Proyectos Eléctricos</option>
+							<option value="10">&nbsp Técnico en Prevención de Riesgos</option>
+							<option value="11">&nbsp Técnifo Topógrafo</option>
+							
+						</select>
+					</form>
+				</div>
+
+				<div class="escuelas-min" style="border-color:#B2D33C;">
+					<p>Escuela de Diseño</p>
+
+					<form>
+						<select>
+							<option value="1">Carreras</option>
+							<option value="2">Opción 2</option>
+							<option value="3">Opción 3</option>
+						</select>
+					</form>
+				</div>
+
+				<div class="escuelas-min" style="border-color:#798388;">
+					<p>Escuela de Informática y Telecomunicaciones</p>
+					<form>
+						<select>
+							<option value="1">Carreras</option>
+							<option value="2">Opción 2</option>
+							<option value="3">Opción 3</option>
+						</select>
+					</form>
+				</div>
+
+				<div class="escuelas-min" style="border-color:#213B70;">
+					<p>Escuela de Ingeniería</p>
+
+					<form>
+						<select>
+							<option value="1">Carreras</option>
+							<option value="2">Opción 2</option>
+							<option value="3">Opción 3</option>
+						</select>
+					</form>
+				</div>
+
+				<div class="escuelas-min" style="border-color:#118A4E;">
+					<p>Escuela de Recursos Naturales</p>
+
+					<form>
+						<select>
+							<option value="1">Carreras</option>
+							<option value="2">Opción 2</option>
+							<option value="3">Opción 3</option>
+						</select>
+					</form>
+				</div>
+
+				<div class="escuelas-min" style="border-color:#00A9E2;">
+					<p>Escuela de Salud</p>
+
+					<form>
+						<select>
+							<option value="1">Carreras</option>
+							<option value="2">Opción 2</option>
+							<option value="3">Opción 3</option>
+						</select>
+					</form>
+				</div>
+
+				<div class="escuelas-min" style="border-color:#0E99A7;">
+					<p>Escuela de Turismo</p>
+
+					<form>
+						<select>
+							<option value="1">Carreras</option>
+							<option value="2">Opción 2</option>
+							<option value="3">Opción 3</option>
+						</select>
+					</form>
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
+
+
+	<footer class="footer">
+
+		<div class="col-4 separador-right">
+			<ul>
+				<li class="title">DUOC UC</li>
+				<li><a href="#">Reglamento académico</a></li>
+				<li><a href="#">Políticas de privacidad</a></li>
+				<li><a href="#">Autoridades</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+		
+		<div class="col-4 separador-right">
+			<ul>
+				<li class="title">ADMISIÓN 2018</li>
+				<li><a href="#">Carreras</a></li>
+				<li><a href="#">Sedes</a></li>
+				<li><a href="#">Proceso de admisión</a></li>
+				<li><a href="#">Financiamiento</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+		</div>
+
+		<div class="col-4">
+			<img class="acreditacion" src="acreditado7-2017.png">
+		</div>
+	</footer>
+	<footer class="footer sub-footer">
+		<div style="text-align: center;">
+			<a href="login.html">Portal Colaboradores</a> | 
+			<a href="#">Portal Proveedores</a>
+		</div>
+	</footer>
+</body>
+
+
+
+</html>

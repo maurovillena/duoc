@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+	<header class="header">
+		<a class="nav-logo" href="index.html"><span style="color:#EEB829;">Duoc</span> <span style="color:#fff;">UC</span></a>
+		
+		<ul class="nav">
+			<li class="header-activo"><a href="escuelas.html">Carreras y Escuelas</a></li>
+			<li><a href="noticias.html">Noticias</a></li>
+			<li><a href="#">Admisión</a></li>
+			<li><a href="#" onclick="showdrop();">Sitios <i class="fas fa-caret-down"></i></a>
+				<ul class="dropdown" style="display:none;" id="nav-dropdown">
+					<li><a href="#">Nosotros</a></li>
+					<li class="separador-bottom"><a href="#">Misión</a></li>
+					<li><a href="login.html">Portal Alumnos</a></li>
+				</ul>
+			</li>
+
+			<li><input class="buscador" type="text" name="search" placeholder="Buscar"><button class="boton-buscador"><i class="fas fa-search"></i></button></li>
+
+			<script type="text/javascript">
+				function showdrop(){
+
+					var x = document.getElementById('nav-dropdown');
+
+					if (x.style.display==='none') {
+						x.style.display='block';
+					} else {
+						x.style.display='none';
+					}
+
+				}
+			</script>
+			
+		</ul>
+		
+
+	</header>
+	<header class="sub-header comunicaciones">
+		<a class="nav-logo" href="escuela.html"><span style="color:#fff;">Escuela de Comunicación</span></a>
+
+		<ul class="nav">
+			<a href="teatro.html"><li>Actuación</li></a>
+			<a href="#"><li class="active">Actuación (Pestañas)</li></a>
+			<a href="#"><li>Ítem 3</li></a>
+			<a href="#"><li>Ítem 4</li></a>
+		</ul>
+
+	</header>
+	<header class="sub-header-responsive comunicaciones">
+		<a class="nav-logo" href="escuela.html"><span style="color:#fff;">Escuela de Comunicación</span></a>
+		<button onclick="collapse()" id="nav-collapse"><i class="fas fa-bars"></i></button>
+
+		<div id="collapse-content">
+			<ul class="transversal">
+				<a href="escuelas.html"> <li class="header-activo">Carreras y Escuelas</li> </a>
+				<a href="noticias.html"><li>Noticias</li></a>
+				<a href="#"><li>Admisión</li></a>
+			</ul>
+			<ul>
+				<a href="teatro.html"><li>Actuación</li></a>
+				<a href="#"><li class="header-activo">Actuación (pestañas)</li></a>
+				<a href="#"><li>Ítem 3</li></a>
+				<a href="#"><li>Ítem 4</li></a>
+
+			</ul>
+		</div>
+
+		
+	</header>
+
+	<script type="text/javascript">
+		function collapse(){
+
+					var x = document.getElementById('collapse-content');
+
+					if (x.style.display==='none') {
+						x.style.display='block';
+
+					} else {
+						x.style.display='none';
+					}
+
+				}
+	</script>
+
+	<div class="full-width destacado">
+		<img src="teatro.jpg">
+		<div class="hero-carreras">
+			<h1>Actuación</h1>
+		</div>
+	</div>
+
+
+
+	<div class="seccion carreras">
+		<div class="col-3 col-sm-12">
+			<h3 class="info-carrera">General</h3>
+			<ul>
+				<li><strong>Título:</strong> Actor/Actriz</li>
+				<li><strong>Duración:</strong> 8 semestres</li>
+			</ul>
+
+			<h4>Certificación académica intermedia</h4>
+			<p>La malla de Actuación está estructurada en base a 2 módulos, en función de áreas de desempeño laboral, y contempla las certificaciones correspondientes una vez cumplidos los requisitos y condiciones para cada módulo.
+			<br>
+			Certificaciones:
+			</p>
+			<ul>
+				<li>Técnicas de actuación para cine y televisión</li>
+				<li>Producción teatral</li>
+			</ul>
+
+			<h4>Convenios Internacionales</h4>
+			<p>Duoc UC mantiene convenios de intercambio académico con diferentes instituciones educacionales del mundo, traducidos en la posibilidad de cursar un período académico en el extranjero.</p>
+        
+		</div>
+
+		<div class="col-5 left-col-1 col-sm-12">
+			<h3 class="info-carrera">Descripción de la carrera</h3>
+			 <!-- Tab links -->
+			<div class="tab">
+			  <button class="tablinks" onclick="openTab(event, 'Admision')" id="defaultOpen">Proceso de Admisióm</button>
+			  <button class="tablinks" onclick="openTab(event, 'Perfil')">Perfil de Egreso</button>
+			  <button class="tablinks" onclick="openTab(event, 'Campo')">Campo Laboral</button>
+			</div>
+
+			<!-- Tab content -->
+			<div id="Admision" class="tabcontent">
+				<h4>Proceso de Admisión</h4>
+				<strong>Examen de Admisión</strong>
+				<p>El Examen de Admisión es de carácter práctico, tiene una duración aproximada de 3 horas y tiene por objetivo medir nivel de motivación y evaluar condiciones y aptitudes que se requieren para el estudio de la disciplina.</p>
+				<strong>Consta de 4 áreas:</strong>
+				<ol>
+					<li>Movimiento</li>
+					<li>Voz</li>
+					<li>Actuación</li>
+					<li>Entrevista Grupal</li>
+				</ol>
+				<p>Para estos días los postulantes deben presentarse con ropa deportiva. La prueba es de carácter selectivo, no tiene ningún costo y su aprobación es prerrequisito para la posterior matrícula.</p>
+				<strong>Debes traer obligatoriamente:</strong>
+				<ul>
+					<li> Foto tamaño carnet o tamaño pasaporte – con nombre completo y Rut (la fotografía debe ser actual, no se aceptan impresas en papel)</li>
+					<li>Ropa de Training (calzas, polera, buzo, ropa cómoda)</li>
+					<li>Agua</li>
+					<li>Lápiz Pasta</li>
+				</ul>
+			</div>
+
+			<div id="Perfil" class="tabcontent">
+
+				<h4>Perfil de Egreso</h4>
+				<p>El Actor/Actriz al finalizar sus estudios estará capacitado para representar con solvencia diferentes estilos y géneros dramáticos, demostrando versatilidad, habilidades interpretativas en distintos formatos y creatividad en la construcción integral de una puesta en escena. Está preparado para desarrollar y gestionar sus propios proyectos culturales y/o integrarse en forma efectiva a equipos de trabajo multidisciplinarios.
+				<br>
+				En su formación, Duoc UC promueve el desarrollo de personas integrales, conscientes de su dignidad trascendente, y comprometidas con las personas y la sociedad, integrando la ética, los valores cristianos y el desarrollo de las competencias necesarias para el mundo de hoy.</p>
+
+				<p>Al concluir el Plan de Estudios de Actuación, el egresado será capaz de demostrar las siguientes competencias.</p>
+						
+				<strong>Competencias de Especialidad</strong>
+
+				<ul>
+					<li>Crear nuevas realidades con el cuerpo como instrumento expresivo.</li>
+					<li>Crear nuevas realidades con la voz como instrumento expresivo.</li>
+					<li>Crear un personaje a partir de la observación e investigación psicológica, sociológica e histórica.</li>
+					<li>Integrar elementos de la realidad en la creación teatral.</li>
+					<li>Estar orgánicamente (ser orgánico) sobre el escenario.</li>
+					<li>Integrar premisas de dirección en la interpretación del rol y en la propuesta del montaje.</li>
+					<li>Extraer premisas de dirección a partir de un texto determinado.</li>
+					<li>Crear textos dramáticos representables.</li>
+					<li>Gestionar proyectos culturales.</li>
+					<li>Elaborar contenidos apoyándose en referentes clave de la identidad de la sociedad occidental.</li>
+					<li>Generar estrategias adecuadas para el logro de un proyecto comunicacional acorde con sus objetivos.</li>
+					<li>Comunicar contenidos a las audiencias en forma clara y persuasiva.</li>
+					<li>Articular una metodología creativa susceptible de ser replicada en la resolución eficaz de problemas comunicacionales.</li>
+					<li>Integrar equipos multidisciplinarios de trabajo que resuelven eficazmente proyectos comunicacionales.</li>
+				</ul>
+
+				<strong>Competencias Genéricas</strong>
+
+				<ul>
+					<li>Comunicarse en forma oral o escrita, aplicando herramientas lingüístico-pragmáticas que permiten la solución de problemas comunicativos en los contextos académicos, de acuerdo al marco común de referencia de las lenguas.</li>
+					<li>Resolver situaciones problemáticas de la vida cotidiana y mundo laboral, utilizando operaciones de matemáticas básicas, de acuerdo a requerimientos.</li>
+					<li>Reconocer un desempeño correcto en situaciones de la profesión o especialidad en el área de Comunicación.</li>
+					<li>Comunicarse de forma oral y escrita usando el idioma inglés en situaciones socio-laborales a un nivel elemental, según la Tabla de Competencias TOEIC y CEFR.</li>
+					<li>Elaborar proyectos innovadores que agreguen valor a contextos sociales y productivos, de acuerdo a las necesidades del entorno.</li>
+				</ul>
+			</div>
+
+			<div id="Campo" class="tabcontent">
+			 	<h4>Campo Laboral</h4>
+			 	<p>El campo laboral del Actor/Actriz es de intérprete tanto en teatro como en producciones audiovisuales. También podrá desarrollar sus competencias como dramaturgo, director teatral, productor y áreas vinculadas con el uso profesional de la voz dentro de una compañía de teatro o en otros ámbitos afines dentro de instituciones públicas o privadas.
+				<br>
+				Además podrá  generar su propio emprendimiento y/o integrarse a equipos multidisciplinarios en el sector de las industrias creativas y  gestionar  proyectos que contribuyan desde cualquiera de las áreas de la carrera  al  desarrollo cultural.</p>
+			</div> 
+
+		<div class="full-width">
+			<h3>Acreditación</h3>
+			<img src="acreditacion-actuacion.png">
+		</div>
+
+		<script type="text/javascript">
+			function openTab(evt, tabName) {
+		    // Declare all variables
+		    var i, tabcontent, tablinks;
+
+		    // Get all elements with class="tabcontent" and hide them
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+
+		    // Get all elements with class="tablinks" and remove the class "active"
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+
+		    // Show the current tab, and add an "active" class to the button that opened the tab
+		    document.getElementById(tabName).style.display = "block";
+		    evt.currentTarget.className += " active";
+
+		} 
+
+		</script>
+
+		<script>
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+		</script>
+		</div>
+<!--
+		<div class="col-5 left-col-1">
+			<h3 class="info-carrera">Descripción de la carrera</h3>
+			<div class="acordeon">
+
+				<div class="seccion-acordeon">
+					<header>
+						<button onclick="acordeon1();">Proceso de admisión <span>&#9662</span></button>
+					</header>
+					<div id="seccion-1" class="texto" style="display: none;">
+						<strong>Examen de Admisión</strong>
+						<p>El Examen de Admisión es de carácter práctico, tiene una duración aproximada de 3 horas y tiene por objetivo medir nivel de motivación y evaluar condiciones y aptitudes que se requieren para el estudio de la disciplina.</p>
+						<strong>Consta de 4 áreas:</strong>
+						<ol>
+							<li>Movimiento</li>
+							<li>Voz</li>
+							<li>Actuación</li>
+							<li>Entrevista Grupal</li>
+						</ol>
+						<p>Para estos días los postulantes deben presentarse con ropa deportiva. La prueba es de carácter selectivo, no tiene ningún costo y su aprobación es prerrequisito para la posterior matrícula.</p>
+						<strong>Debes traer obligatoriamente:</strong>
+						<ul>
+							<li> Foto tamaño carnet o tamaño pasaporte – con nombre completo y Rut (la fotografía debe ser actual, no se aceptan impresas en papel)</li>
+							<li>Ropa de Training (calzas, polera, buzo, ropa cómoda)</li>
+							<li>Agua</li>
+							<li>Lápiz Pasta</li>
+						</ul>
+
+					</div>
+				</div>
+
+				<div class="seccion-acordeon">
+					<header>
+						<button onclick="acordeon2();">Perfil de egreso <span>&#9662</span></button>
+					</header>
+					<div id="seccion-2" class="texto" style="display: none;">
+						<p>El Actor/Actriz al finalizar sus estudios estará capacitado para representar con solvencia diferentes estilos y géneros dramáticos, demostrando versatilidad, habilidades interpretativas en distintos formatos y creatividad en la construcción integral de una puesta en escena. Está preparado para desarrollar y gestionar sus propios proyectos culturales y/o integrarse en forma efectiva a equipos de trabajo multidisciplinarios.
+						<br>
+						En su formación, Duoc UC promueve el desarrollo de personas integrales, conscientes de su dignidad trascendente, y comprometidas con las personas y la sociedad, integrando la ética, los valores cristianos y el desarrollo de las competencias necesarias para el mundo de hoy.</p>
+
+						<p>Al concluir el Plan de Estudios de Actuación, el egresado será capaz de demostrar las siguientes competencias.</p>
+						
+						<strong>Competencias de Especialidad</strong>
+
+						<ul>
+							<li>Crear nuevas realidades con el cuerpo como instrumento expresivo.</li>
+							<li>Crear nuevas realidades con la voz como instrumento expresivo.</li>
+							<li>Crear un personaje a partir de la observación e investigación psicológica, sociológica e histórica.</li>
+							<li>Integrar elementos de la realidad en la creación teatral.</li>
+							<li>Estar orgánicamente (ser orgánico) sobre el escenario.</li>
+							<li>Integrar premisas de dirección en la interpretación del rol y en la propuesta del montaje.</li>
+							<li>Extraer premisas de dirección a partir de un texto determinado.</li>
+							<li>Crear textos dramáticos representables.</li>
+							<li>Gestionar proyectos culturales.</li>
+							<li>Elaborar contenidos apoyándose en referentes clave de la identidad de la sociedad occidental.</li>
+							<li>Generar estrategias adecuadas para el logro de un proyecto comunicacional acorde con sus objetivos.</li>
+							<li>Comunicar contenidos a las audiencias en forma clara y persuasiva.</li>
+							<li>Articular una metodología creativa susceptible de ser replicada en la resolución eficaz de problemas comunicacionales.</li>
+							<li>Integrar equipos multidisciplinarios de trabajo que resuelven eficazmente proyectos comunicacionales.</li>
+						</ul>
+						<strong>Competencias Genéricas</strong>
+						<ul>
+							<li>Comunicarse en forma oral o escrita, aplicando herramientas lingüístico-pragmáticas que permiten la solución de problemas comunicativos en los contextos académicos, de acuerdo al marco común de referencia de las lenguas.</li>
+							<li>Resolver situaciones problemáticas de la vida cotidiana y mundo laboral, utilizando operaciones de matemáticas básicas, de acuerdo a requerimientos.</li>
+							<li>Reconocer un desempeño correcto en situaciones de la profesión o especialidad en el área de Comunicación.</li>
+							<li>Comunicarse de forma oral y escrita usando el idioma inglés en situaciones socio-laborales a un nivel elemental, según la Tabla de Competencias TOEIC y CEFR.</li>
+							<li>Elaborar proyectos innovadores que agreguen valor a contextos sociales y productivos, de acuerdo a las necesidades del entorno.</li>
+						</ul>
+
+					</div>
+				</div>
+
+				<div class="seccion-acordeon">
+					<header>
+						<button onclick="acordeon3();">Campo laboral <span>&#9662</span></button>
+					</header>
+					<div id="seccion-3" class="texto" style="display: none;">
+						<p>El campo laboral del Actor/Actriz es de intérprete tanto en teatro como en producciones audiovisuales. También podrá desarrollar sus competencias como dramaturgo, director teatral, productor y áreas vinculadas con el uso profesional de la voz dentro de una compañía de teatro o en otros ámbitos afines dentro de instituciones públicas o privadas.
+						<br>
+						Además podrá  generar su propio emprendimiento y/o integrarse a equipos multidisciplinarios en el sector de las industrias creativas y  gestionar  proyectos que contribuyan desde cualquiera de las áreas de la carrera  al  desarrollo cultural.</p>
+					</div>
+				</div>
+				
+			</div>
+
+			<script type="text/javascript">
+				function acordeon1(){
+
+					var x = document.getElementById('seccion-1');
+					var y = document.getElementById('seccion-2');
+					var z = document.getElementById('seccion-3');
+
+					if (x.style.display==='none') {
+						x.style.display='block';
+						y.style.display='none';
+						z.style.display='none';
+					} else {
+						x.style.display='none';
+					}
+
+				}
+
+				function acordeon2(){
+
+					var x = document.getElementById('seccion-1');
+					var y = document.getElementById('seccion-2');
+					var z = document.getElementById('seccion-3');
+
+					if (y.style.display==='none') {
+						y.style.display='block';
+						x.style.display='none';
+						z.style.display='none';
+					} else {
+						y.style.display='none';
+					}
+
+				}
+
+				function acordeon3(){
+
+					var x = document.getElementById('seccion-1');
+					var y = document.getElementById('seccion-2');
+					var z = document.getElementById('seccion-3');
+
+					if (z.style.display==='none') {
+						z.style.display='block';
+						y.style.display='none';
+						x.style.display='none';
+					} else {
+						z.style.display='none';
+					}
+
+				}
+			</script>
+
+			<div class="full-width">
+				<h3>Acreditación</h3>
+				<img src="acreditacion-actuacion.png">
+			</div>
+		</div>
+		-->
+		<div class="col-3 col-sm-12">
+			<h3 class="info-carrera">Sedes</h3>
+
+			<div class="sedes">
+				<header>San Carlos de Apoquindo</header>
+				<ul>
+					<li>Modalidad: Presencial</li>
+					<li>Jornada: Diurno</li>
+					<li>Matrícula semestral: $116.000</li>
+					<li>Valor Mensualidad: $271.000</li>
+					<li><a href="#">Mapa</a></li>
+				</ul>
+			</div>
+
+			<div class="sedes">
+				<header>Viña del Mar</header>
+				<ul>
+					<li>Modalidad: Presencial</li>
+					<li>Jornada: Diurno</li>
+					<li>Matrícula semestral: $98.000</li>
+					<li>Valor Mensualidad: $244.000</li>
+					<li><a href="#">Mapa</a></li>
+				</ul>
+			</div>
+
+			<a class="button btn-primary right" href="#">Descargar malla &#8681</a>
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+		<div class="col-4 col-sm-12 separador-right">
+			<ul>
+				<li class="title">DUOC UC</li>
+				<li><a href="#">Reglamento académico</a></li>
+				<li><a href="#">Políticas de privacidad</a></li>
+				<li><a href="#">Autoridades</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+		
+		<div class="col-4 col-sm-12 separador-right">
+			<ul>
+				<li class="title">ADMISIÓN 2018</li>
+				<li><a href="#">Carreras</a></li>
+				<li><a href="#">Sedes</a></li>
+				<li><a href="#">Proceso de admisión</a></li>
+				<li><a href="#">Financiamiento</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+		</div>
+
+		<div class="col-4 col-sm-12">
+			<img class="acreditacion" src="acreditado7-2017.png">
+		</div>
+	</footer>
+	<footer class="footer sub-footer">
+		<div style="text-align: center;">
+			<a href="login.html">Portal Colaboradores</a> | 
+			<a href="#">Portal Proveedores</a>
+		</div>
+	</footer>
+</body>
+
+
+
+</html>
