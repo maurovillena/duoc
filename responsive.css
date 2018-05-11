@@ -141,6 +141,49 @@
 		background-color: #002d56!important;
 	}
 
+	/* HERO */
+
+	.destacado{
+		background:#000;
+		padding-top: 75px;
+	}
+
+	.full-width{
+		height: auto;
+		max-height: unset;
+	}
+
+	.full-width img{
+		display: block;
+	}
+
+	.hero-text{
+		margin-top: 20px;
+		display: block;
+		position: relative;
+		top: unset;
+	}
+
+	.hero-text h1{
+		font-size: 35px;
+		margin-top: 0;
+	}
+
+	.hero-carreras{
+		top: unset;
+		background:#000;
+		position: relative;
+		display: block;
+	}
+
+	.hero-carreras h1{
+		font-size: 35px;
+	}
+
+	.sm-hero-fix{
+		padding-top: 50px!important;
+	}
+
 	/* ESCUELAS */
 
 	.escuelas-min{
